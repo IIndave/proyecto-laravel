@@ -13,5 +13,6 @@ class VentasController extends Controller
         return $results;
     }
     
+    
 
 }
