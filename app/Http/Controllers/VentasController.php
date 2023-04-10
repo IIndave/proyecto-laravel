@@ -12,4 +12,12 @@ class VentasController extends Controller
         $results = DB::select('SELECT * FROM [laravel].[dbo].[Ventas]');
         return $results;
     }
+
+    public function listByMonth(Request $request){
+        
+        $month = $request->query('month');
+        $results = DB::select("SELECT * FROM [laravel].[dbo].[Ventas] where fecha LIKE '$month%'");
+
+        return $results;
+    }
 }

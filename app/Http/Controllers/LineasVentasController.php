@@ -9,7 +9,11 @@ use Illuminate\Support\Facades\DB;
 class LineasVentasController extends Controller
 {
     public function list(){
-        $results = DB::select('SELECT * FROM [laravel].[dbo].[LineasVentas]');
+        $results = DB::select('SELECT * FROM [laravel].[dbo].[LineasVentas]  ');
         return $results;
     }
+
+    
+
+
 }
