@@ -20,3 +20,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 
 Route::get('/tipocliente', 'App\Http\Controllers\ApiTipoClienteController@buscar');
+Route::get('/ventas', 'App\Http\Controllers\VentasController@buscar');
+
