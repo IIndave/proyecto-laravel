@@ -23,7 +23,8 @@ Route::get('/tipocliente', 'App\Http\Controllers\ApiTipoClienteController@buscar
 Route::get('/clientes/list', 'App\Http\Controllers\ClienteController@list');
 
 Route::get('/lineasventas/list', 'App\Http\Controllers\LineasVentasController@list');
-Route::get('/ventas/listByMonth', 'App\Http\Controllers\VentasController@listByMonth');
 
+Route::get('/ventas/listByMonth', 'App\Http\Controllers\VentasController@listByMonth');
+Route::get('/ventas/totalByMonth', 'App\Http\Controllers\VentasController@totalByMonth');
 Route::get('/ventas/list', 'App\Http\Controllers\VentasController@list');
 
