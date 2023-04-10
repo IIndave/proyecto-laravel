@@ -21,5 +21,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::get('/tipocliente', 'App\Http\Controllers\ApiTipoClienteController@buscar');
 Route::get('/clientes/list', 'App\Http\Controllers\ClienteController@list');
+Route::get('/lineasventas/list', 'App\Http\Controllers\LineasVentasController@list');
 Route::get('/ventas/list', 'App\Http\Controllers\VentasController@list');
 
